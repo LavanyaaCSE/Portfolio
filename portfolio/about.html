@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<style>
+
+ img{
+	width:100%;
+	height: auto;
+}
+body{
+			 background-image: linear-gradient(to top left, #99ffcc 0%, #ffccff 100%);
+			 background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+			}
+
+
+h1{
+	font-family: cursive;
+	font-size:50px;
+}
+
+
+
+.button5 {border-radius: 50%;
+	font-size: 90px;
+	background-color: rgba(0, 0, 0, 0.0);
+	border: rgba(0, 0, 0, 0.0);
+	cursor: pointer;
+}
+.my{
+	display: flex;
+}
+.about{
+	text-align: center;
+}
+@media(max-width:700px){
+	h1{
+	font-size:40px;	
+	}
+	.about img{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row;
+		flex-wrap: wrap;
+		padding:10px ;
+		width: 200px;
+		height:400px ;
+	}
+	p{
+		font-size: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	</style>
+
+</head>
+<body>
+	<h1>About</h1>
+	<div class="my">
+	<button onclick="goToNextPage()" class="button5" ><</button>
+	<p style="font-size: 28px;padding-left: 50px;padding-right: 50px;">I'm a Designer and Developer from India.Enthusiastic computer science engineering student from Chennai Institue Of technology and I started my journey as a designer and a front-end developer.Obtained Python certification course from Besant Technology, CISCO Cyber Security Essentials, CISCO networking essentials and Web developement certification from Udemy. I'm here to deliever my excellent developer and designer skills to this world.<br>Let you know little more about me that how I get into Design and Development field
+	I had completed my secondary schooling with 94% and my higher secondary with 90% as a Bio-Maths student and get into Chennai INstitute Of Technology and I had a thought of developing my artistic skills from my schooling itself then i trird to learn adobe photoshop and illustrator with my free time in schools and then at starting of my college I fell on love with Web development as I was a Computer Science Engineering student then I fell in love with animations so now I'm learning adobe animate too. Like this my journey started towards web development as a designer and now I'm waiting for a big achievement for my amazing future.</p>
+	<button onclick="goNextPage()" class="button5" >></button>
+</div>
+<div class="head">
+	<h1>My Expertise</h1></div>
+<div class="about">
+<img src="D:\portfolio\pie-chart.png"  style="height: 500px;width:480px;">
+</div>
+<script>
+       function goToNextPage() {
+            window.location.href='index.html';
+        }
+        function goNextPage() {
+            window.location.href = 'projects.html';
+        }	
+</script>	
+</script>
+</body>
+</html>

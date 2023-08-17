@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>coming-soon</title>
+	<style>
+		h1,h2,p{
+			color: white;
+		}
+	.social-media-container {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        ul.social-media-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.social-media-links li {
+            margin-bottom: 10px;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            
+        }
+
+        ul.social-media-links li a {
+            display: block;
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+        }
+        ul.social-media-links li a:hover{
+        	font-size:25px;
+        }
+	.input {
+		display: flex;
+		margin-right: 10px;
+		margin-left: 20px;
+		  justify-content: center;
+	}
+	.custom {
+            width: 300px;
+            height: 40px;
+        }
+    .button{
+    	background-color:red;
+    	display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor:pointer;
+            margin-left:48%;
+
+            height: 40px;
+       }  
+     #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }  
+      
+    
+    input{
+    	background-color: #cefeed;
+    }
+    input:hover{
+    	background-color:#eec7fd
+    }	
+    .footer_bottom{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 25px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+h4{
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 300;
+    margin-bottom: 4px;
+    color:white;
+    padding-bottom: 25px;
+}
+a{
+color: #ac7efc;
+font-family: cursive;
+margin: 0px 15px;
+text-decoration: none;
+}
+a:hover{
+    color:white;
+}
+@media(max-width:700px){
+	h2{
+	font-size:30px;	
+	}
+	span{
+		font-size: 55px;
+	}
+	#video-background{
+		width: absolute;
+		height: absolute;
+	}
+	.flow{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
+	.button{
+		display: flex;
+		justify-content: center;
+		 margin-right:180px;
+
+	}
+	h4{
+		padding-bottom: 25px;
+	}
+	.input{
+		padding-left: 20px;
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="video-background">
+        <video autoplay loop muted>
+            <source src="D:\portfolio\Untitled design.mp4" type="video/mp4">
+        </video>
+    </div>
+	<div class="social-media-container">
+        <ul class="social-media-links">
+            <li><a href="https://www.facebook.com">Facebook</a></li><br><br><br>
+            <li><a href="https://www.twitter.com">Twitter</a></li><br><br><br><br>
+            <li><a href="https://www.instagram.com">Instagram</a></li><br><br><br><br>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        </ul>
+    </div>
+    <div class="flow">
+	<h2 style="font-size:40px;font-family: Algerian; text-align: center;">Our Website is<br>
+	<span style="font-size:75px;font-family: Algerian;text-align: center;">COMING SOON</span></h2>
+	<p style="padding-left: 100px; padding-right: 100px; font-family: cursive ;font-size: 35px;">Our website is under construction but we are ready to to grab your attention. We are here to deliver most valuable and a great content for you. Want to know more about us stay tuned together and wait for our great launch<br>Notify me when you are READY!....</p>
+<div class="input">
+	 <form method="get" action="mailto:lavanyaalavi07@gmail.com">
+	<input type="text" name="name" placeholder="Name"class="custom" required>&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="email" name="mail" placeholder="E-Mail" class="custom" required>&nbsp;&nbsp;&nbsp;&nbsp;
+</div><br><br>
+<button type="submit" class="button">Submit</button></form>
+<p id="timer" style="font-size:45px; text-align: center;">00:00:00</p>
+</div>
+<script>
+        // Set the target countdown time (replace with your desired time)
+        var targetTime = new Date('2023-06-30T00:00:00');
+
+        // Update the countdown timer every second
+        setInterval(function() {
+            var currentTime = new Date();
+            var timeDifference = targetTime - currentTime;
+
+            // Calculate hours, minutes, and seconds
+            var hours = Math.floor(timeDifference / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Add leading zeros if necessary
+            hours = hours.toString().padStart(2, '0');
+            minutes = minutes.toString().padStart(2, '0');
+            seconds = seconds.toString().padStart(2, '0');
+
+            // Update the timer display
+            var timerElement = document.getElementById('timer');
+            timerElement.textContent = hours + ':' + minutes + ':' + seconds;
+        }, 1000);
+    </script>
+    <div class="footer_bottom">
+       
+        <h4 >All Rights Are Reserved<br>+91 9361022765<br>lavanyaalavi07@gmail.com</h4>
+    </div>
+	</body>
+	</html>
