@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera App Clone</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+
+header {
+    background: linear-gradient(to right, #78e8ffff, #0066ff);
+    padding: 20px;
+    text-align: right;
+    position: relative;
+}
+
+header .logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #78e8ffff;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-info {
+        padding: 20px;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-card {
+        padding: 10px;
+    }
+
+    .profile-info h1 {
+        font-size: 24px;
+    }
+
+    .profile-info h3 {
+        font-size: 16px;
+    }
+
+    .profile-info p, .profile-info ul li {
+        font-size: 12px;
+    }
+
+    .profile-info {
+        padding: 15px;
+    }
+
+    .profile-info ul li i {
+        margin-right: 8px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+    }
+}
+
+.mySlides2:not(:first-child) {
+  display: none;
+}
+.slideshow-container {
+  padding-top: 10px;
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+.left, .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 16px;
+  color:#0066ff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  background-color: transparent;
+  border: none;
+}
+
+.right {
+  right: 10px;
+}
+
+.right:hover, .left:hover {
+  background-color: #0066ff;
+  color: black;
+}
+.pro1{
+  display: flex;
+  flex-direction: row;
+}
+
+.slideshow-container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.content1 p{
+  text-align: justify;
+}
+.content1{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"></a>
+            </div>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides2">
+            <img src="Iris1.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="Iris2.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="Iris3.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides2">
+              <img src="Iris4.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides2">
+              <img src="Iris5.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides2">
+              <img src="Iris6.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="Iris7.jpeg" style="width:100%">
+        </div>
+        <button class="left" onclick="plusDivs(-1, 1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(1, 1)">&#10095;</button>  
+      </div>
+      <div class="content1">
+        <div class="content1">
+            <h3>Iris flower classification</h3>
+            <p>In my data science project, I classified Iris flower species using logistic regression and Support Vector Classifier (SVC) algorithms in Python, alongside Pandas, NumPy, and Scikit-learn libraries.
+                 Through meticulous analysis and preprocessing, I trained robust models leveraging features like sepal and petal dimensions, achieving accurate species identification. Thorough model evaluation ensured reliability and generalization.
+                 This project highlights my proficiency in machine learning techniques and provides practical insights into classification tasks.
+                  By accurately classifying Iris flower species, it contributes to botanical research and educational endeavors, showcasing my ability to deliver effective data-driven solutions to real-world classification challenges.
+            </p>
+            <b>Completion Date :</b> Nov 2023 <br>
+            <b>Github repository link : </b><a class="a" href="https://github.com/LavanyaaCSE/Data-Science-Projects.git">Github Link</a><br>
+        </div>
+</div>
+
+    <script>
+                const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    showTab('experiences');
+});
+
+
+var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10", "mySlides11"];
+
+for (var i = 0; i < slideIndex.length; i++) {
+  showDivs(1, i);
+}
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) { slideIndex[no] = 1; }
+  if (n < 1) { slideIndex[no] = x.length; }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex[no] - 1].style.display = "block";  
+}
+
+
+    </script>
+</body>
+</html>

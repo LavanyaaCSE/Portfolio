@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera App Clone</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+        }
+
+        header {
+            background: linear-gradient(to right, #78e8ffff, #0066ff);
+            padding: 20px;
+            text-align: right;
+            position: relative;
+        }
+
+        header .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .logo a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #78e8ffff;
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .nav-links.active {
+                display: block;
+            }
+
+            .nav-links li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header nav ul {
+                text-align: center;
+            }
+
+            header nav ul li {
+                display: block;
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .slideshow-container {
+            padding-top: 10px;
+            max-width: 800px; /* Adjusted width */
+            position: relative;
+            margin: auto;
+            text-align: center; /* Center-align the content */
+        }
+
+        .content1 {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify; /* Align text like a paragraph */
+        }
+
+        .content1 p {
+            margin-bottom: 1em;
+            line-height: 1.6; /* Improve readability */
+        }
+
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: #78e8ffff;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"></a>
+            </div>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides2">
+            <video width="100%" controls>
+                <source src="logs.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
+
+    <div class="content1">
+        <h3>LogShips Shipment App</h3>
+        <p>
+           
+The app's machine learning model predicts shipment prices based on cargo type, distance, and delivery urgency, providing users with a price estimate and a list of providers. The "List of Providers" feature allows users to compare logistics services by profiles, pricing, and performance. The activity dashboard offers shipment summaries and tracking history, while the recent updates screen highlights the latest app enhancements. A 24/7 AI chatbot supports users with real-time tracking, price predictions, and provider information, improving overall user experience and service efficiency.
+        </p>
+        <p>
+            <b>Completion Date :</b> Aug 2024 <br>
+            <b>Github repository link : </b><a href="https://github.com/LavanyaaCSE/Medical-website.git">Github Link</a><br>
+        </p>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showTab('experiences');
+        });
+    </script>
+</body>
+</html>
